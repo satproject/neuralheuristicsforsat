@@ -55,6 +55,8 @@ class PoolDatasetGenerator:
             inputs, lengths = pad_and_concat([cnf.clauses for cnf in cnfs],
                                              clause_size=self.options['CLAUSE_SIZE'])
             return SequenceSampleWithLabels(inputs=inputs, lengths=lengths, sat_labels=sat_labels, policy_labels=policy_labels)
+        elif representation == 'cnfs':
+            return CNFSampleWithLabels(inputs=np.array([cnf.clauses for cnf in cnfs]), sat_labels=sat_labels)
         assert False
 
 
@@ -106,3 +108,5 @@ def pad_and_concat(sequences, clause_size):
 SequenceSampleWithLabels = collections.namedtuple("SequenceSampleWithLabel", ["inputs", "lengths", "sat_labels", "policy_labels"])
 
 GraphSampleWithLabels = collections.namedtuple("GraphSampleWithLabel", ["inputs", "sat_labels", "policy_labels"])
+
+CNFSampleWithLabels = collections.namedtuple("CNFSampleWithLabels", ["inputs", "sat_labels"])

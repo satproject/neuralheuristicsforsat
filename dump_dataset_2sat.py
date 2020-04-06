@@ -59,7 +59,7 @@ def main():
             tf.python_io.TFRecordWriter(os.path.join(dirname, filename)) as writer:
 
         for _ in tqdm(range(n_observations)):
-            sample_with_labels = generator.generate_batch()
+            sample_with_labels = generator.generate_batch(representation='cnfs')
             tf_sample = {
                  "inputs": np.squeeze(sample_with_labels.inputs.astype(np.float32), 0),
                  "sat": np.squeeze(np.asarray(sample_with_labels.sat_labels).astype(np.float32), 0)

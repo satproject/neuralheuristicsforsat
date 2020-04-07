@@ -41,7 +41,7 @@ def main():
     filename = "train_{}_sr_{}.tfrecord".format(job, complexity)
     options = {
         "PROCESSOR_NUM": 24,
-        "CLAUSE_NUM": 10*complexity,
+        "CLAUSE_NUM": 2*complexity,
         "VARIABLE_NUM": complexity,
         "MIN_VARIABLE_NUM": 1,
         "BATCH_SIZE": 1,

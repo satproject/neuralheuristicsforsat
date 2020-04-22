@@ -1,0 +1,3 @@
+pip install pycosat
+pip install wildqat
+pip install dwave-cloud-client

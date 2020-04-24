@@ -17,7 +17,7 @@ setup(
         'sympy',
         'sklearn',
         'scipy',
-        'matplotlib'
+        'matplotlib',
         'pandas',
         'python-sat',
         'google-api-python-client',

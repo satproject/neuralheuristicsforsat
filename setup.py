@@ -8,7 +8,6 @@ setup(
     url='https://github.com/satproject/neuralheuristicsforsat/',
     license='MIT',
     maintainer='SAT TEAM',
-    long_description=readme,
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,

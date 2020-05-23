@@ -6,7 +6,6 @@ setup(
     name='projekt_sat',
     version='1.0.0',
     url='https://github.com/satproject/neuralheuristicsforsat/',
-    license='MIT',
     maintainer='SAT TEAM',
     packages=find_packages(),
     include_package_data=True,

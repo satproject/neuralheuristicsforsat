@@ -31,7 +31,7 @@ Examples and hyperparameters can be read in `notebooks/iclr2019/tpu_grid.sh`.
 * For DPLL without a step limit see `notebooks/iclr2019/hybrid_dpll.ipynb`.
 * For CDCL without a step limit see `notebooks/iclr2019/hybrid_cdcl.ipynb`.
 
-# Support or old tensorflow:
+### Support old tensorflow
 ```
-pip install git+https://github.com/tensorflow/tensorflow.git@r1.12
+ pip install https://github.com/tensorflow/tensorflow/archive/r1.12.zip
 ```
